@@ -8,9 +8,8 @@ ul#nav li {
 	list-style:none;
 	display: inline-block;
 	text-align: right;
-	padding:1em 10px 0 0;
+	margin: 10px;
 	vertical-align: bottom;
-	margin: 5px 5px 0 0;
 	font-size:13px;
 }
 ul#nav li a {
@@ -104,4 +103,40 @@ ul#right li a {
 	letter-spacing: 0.1px;
 	font-size: 13px;
 	text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+	ul#nav {
+		float: left;
+		margin-top: 15px;
+		padding-left: 15px;
+	}
+
+	ul#nav li {
+		margin: 7px;
+	}
+	input.search_buttons {
+		width: 60%;
+		margin-left: 80px;
+	}
+	ul#left {
+		padding-left: 10px;
+	}
+	ul#right {
+		padding-left: 10px;
+	}
+	ul#left li a {
+		font-size: 10px;
+	}
+	ul#right li a {
+		font-size: 10px;
+	}
+	ul#left li:hover {
+		font-size: 15px;
+		font-weight: 500;
+	}
+	ul#right li:hover {
+		font-size: 15px;
+		font-weight: 500;
+	}
 }
